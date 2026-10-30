@@ -1,0 +1,175 @@
+{
+  "model": "tf_efficientnetv2_s.in21k_ft_in1k",
+  "image_size": 448,
+  "epochs": 10,
+  "validation": "stratified holdout fold 0 of 5 (4280 images)",
+  "val_accuracy_tta": 0.8956,
+  "val_macro_f1_tta": 0.8082,
+  "best_epoch_accuracy_no_tta": 0.8956,
+  "per_class_f1": {
+    "Cassava Bacterial Blight (CBB)": 0.6682,
+    "Cassava Brown Streak Disease (CBSD)": 0.8152,
+    "Cassava Green Mottle (CGM)": 0.8301,
+    "Cassava Mosaic Disease (CMD)": 0.9642,
+    "Healthy": 0.7634
+  },
+  "confusion_matrix": [
+    [
+      146,
+      20,
+      6,
+      7,
+      39
+    ],
+    [
+      23,
+      344,
+      14,
+      19,
+      38
+    ],
+    [
+      6,
+      8,
+      391,
+      50,
+      22
+    ],
+    [
+      9,
+      7,
+      35,
+      2560,
+      20
+    ],
+    [
+      35,
+      27,
+      19,
+      43,
+      392
+    ]
+  ],
+  "class_names": [
+    "Cassava Bacterial Blight (CBB)",
+    "Cassava Brown Streak Disease (CBSD)",
+    "Cassava Green Mottle (CGM)",
+    "Cassava Mosaic Disease (CMD)",
+    "Healthy"
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.8878513002256203,
+      "val_acc": 0.8257009345794393,
+      "minutes": 6.530435633659363
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.8820643413833708,
+      "val_acc": 0.8714953271028038,
+      "minutes": 6.3264348864555355
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.8281207994062301,
+      "val_acc": 0.8789719626168224,
+      "minutes": 6.33028290271759
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.7997011241857072,
+      "val_acc": 0.8855140186915887,
+      "minutes": 6.320922255516052
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.7774002829838914,
+      "val_acc": 0.8871495327102804,
+      "minutes": 6.34771423737208
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.7640200493977084,
+      "val_acc": 0.8927570093457944,
+      "minutes": 6.352606435616811
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.7439559874827402,
+      "val_acc": 0.8929906542056075,
+      "minutes": 6.347853024800618
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.7284589553088473,
+      "val_acc": 0.8948598130841121,
+      "minutes": 6.345604157447815
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.7120188850408409,
+      "val_acc": 0.8946261682242991,
+      "minutes": 6.359184873104096
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.7090140353169357,
+      "val_acc": 0.8955607476635514,
+      "minutes": 6.343933753172556
+    }
+  ],
+  "ensemble": {
+    "members": [
+      "convnext_small.fb_in22k_ft_in1k_384 @384",
+      "tf_efficientnetv2_s.in21k_ft_in1k @448"
+    ],
+    "model1_accuracy": 0.8956,
+    "accuracy": 0.8988,
+    "macro_f1": 0.8158,
+    "per_class_f1": {
+      "Cassava Bacterial Blight (CBB)": 0.6889,
+      "Cassava Brown Streak Disease (CBSD)": 0.8231,
+      "Cassava Green Mottle (CGM)": 0.8275,
+      "Cassava Mosaic Disease (CMD)": 0.9649,
+      "Healthy": 0.7746
+    },
+    "confusion_matrix": [
+      [
+        155,
+        20,
+        5,
+        8,
+        30
+      ],
+      [
+        23,
+        356,
+        13,
+        15,
+        31
+      ],
+      [
+        6,
+        10,
+        391,
+        52,
+        18
+      ],
+      [
+        8,
+        13,
+        36,
+        2560,
+        14
+      ],
+      [
+        40,
+        28,
+        23,
+        40,
+        385
+      ]
+    ]
+  }
+}

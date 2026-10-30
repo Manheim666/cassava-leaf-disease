@@ -1,0 +1,122 @@
+{
+  "model": "convnext_small.fb_in22k_ft_in1k_384",
+  "image_size": 384,
+  "epochs": 10,
+  "validation": "stratified holdout fold 0 of 5 (4280 images)",
+  "val_accuracy_tta": 0.8956,
+  "val_macro_f1_tta": 0.8101,
+  "best_epoch_accuracy_no_tta": 0.8953,
+  "per_class_f1": {
+    "Cassava Bacterial Blight (CBB)": 0.6844,
+    "Cassava Brown Streak Disease (CBSD)": 0.8174,
+    "Cassava Green Mottle (CGM)": 0.8202,
+    "Cassava Mosaic Disease (CMD)": 0.9643,
+    "Healthy": 0.7642
+  },
+  "confusion_matrix": [
+    [
+      154,
+      19,
+      6,
+      9,
+      30
+    ],
+    [
+      20,
+      358,
+      13,
+      14,
+      33
+    ],
+    [
+      6,
+      14,
+      390,
+      51,
+      16
+    ],
+    [
+      8,
+      15,
+      40,
+      2555,
+      13
+    ],
+    [
+      44,
+      32,
+      25,
+      39,
+      376
+    ]
+  ],
+  "class_names": [
+    "Cassava Bacterial Blight (CBB)",
+    "Cassava Brown Streak Disease (CBSD)",
+    "Cassava Green Mottle (CGM)",
+    "Cassava Mosaic Disease (CMD)",
+    "Healthy"
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.872316058521351,
+      "val_acc": 0.8761682242990654,
+      "minutes": 7.883627498149872
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6689255546470176,
+      "val_acc": 0.8813084112149533,
+      "minutes": 7.571434819698334
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6423589117396596,
+      "val_acc": 0.8866822429906542,
+      "minutes": 7.5762415806452434
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6151841314611395,
+      "val_acc": 0.8922897196261682,
+      "minutes": 7.5845470746358234
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.5936061324444593,
+      "val_acc": 0.8913551401869159,
+      "minutes": 7.568282500902812
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.5719622310465214,
+      "val_acc": 0.8932242990654206,
+      "minutes": 7.580825797716776
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.5529103318404349,
+      "val_acc": 0.8880841121495328,
+      "minutes": 7.568197468916575
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.5340345921138561,
+      "val_acc": 0.8953271028037383,
+      "minutes": 7.575542298952739
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.5167631170442027,
+      "val_acc": 0.8948598130841121,
+      "minutes": 7.55773067077001
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.5099921597672044,
+      "val_acc": 0.8946261682242991,
+      "minutes": 7.5766215324401855
+    }
+  ]
+}
